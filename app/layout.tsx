@@ -1,6 +1,9 @@
 import { Inter } from 'next/font/google'
+import { Header } from './components/header/Header'
 
-const inter = Inter({ subsets: ['latin'] })
+import './globals.css'
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata = {
   title: 'Victor Cell',
@@ -14,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} font-sans bg-gray-900`}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
