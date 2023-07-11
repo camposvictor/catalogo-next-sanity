@@ -6,8 +6,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata = {
-  title: 'Victor Cell',
-  description: 'Catálogo da loja Victor Cell',
+  title: 'Store',
 }
 
 export default function RootLayout({
