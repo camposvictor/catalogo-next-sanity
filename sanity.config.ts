@@ -1,5 +1,9 @@
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
+import { colorInput } from '@sanity/color-input'
+
+import category from './sanity/schemas/category-schema'
+import product from './sanity/schemas/product-schema'
 
 export const config = defineConfig({
     name: 'default',
@@ -9,5 +13,6 @@ export const config = defineConfig({
     apiVersion: '2023-07-11',
     basePath: "/admin",
 
-    plugins: [deskTool()],
+    plugins: [deskTool(), colorInput()],
+    schema: { types: [category, product] }
 })
