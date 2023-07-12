@@ -7,13 +7,13 @@ import product from './sanity/schemas/product-schema'
 import billboard from './sanity/schemas/billboard-schema'
 
 export const config = defineConfig({
-    name: 'default',
-    title: 'catalogo',
-    projectId: 'd83sv7cr',
-    dataset: 'production',
-    apiVersion: '2023-07-11',
-    basePath: "/admin",
+  name: 'default',
+  title: 'catalogo',
+  projectId: 'd83sv7cr',
+  dataset: 'production',
+  apiVersion: '2023-07-11',
+  basePath: '/admin',
 
-    plugins: [deskTool(), colorInput()],
-    schema: { types: [category, product, billboard] }
+  plugins: [deskTool(), colorInput()],
+  schema: { types: [category, product, billboard] },
 })
