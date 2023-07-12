@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import { getBillboard } from "@/actions/get-billboard"
-import console from 'console'
 import { Billboard } from '@/components/Billboard'
 
 
