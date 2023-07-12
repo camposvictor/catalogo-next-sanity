@@ -4,6 +4,7 @@ import { colorInput } from '@sanity/color-input'
 
 import category from './sanity/schemas/category-schema'
 import product from './sanity/schemas/product-schema'
+import billboard from './sanity/schemas/billboard-schema'
 
 export const config = defineConfig({
     name: 'default',
@@ -14,5 +15,5 @@ export const config = defineConfig({
     basePath: "/admin",
 
     plugins: [deskTool(), colorInput()],
-    schema: { types: [category, product] }
+    schema: { types: [category, product, billboard] }
 })
