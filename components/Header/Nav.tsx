@@ -27,8 +27,6 @@ export function Nav({ categories }: NavProps) {
     isActive: pathname === `/category/${route.id}`,
   }))
 
-  console.log(routes)
-
   return (
     <nav className={base()}>
       {routes.map(({ href, isActive, label }) => (
