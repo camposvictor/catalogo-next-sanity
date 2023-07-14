@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`${inter.variable} font-sans bg-gray-900`}>
+      <body className={`${inter.variable} bg-gray-900 font-sans`}>
         <Header />
         {children}
       </body>
