@@ -8,6 +8,12 @@ const category = {
       title: 'Nome',
       type: 'string',
     },
+     {
+      name: 'billboard',
+      title: 'Painel',
+      type: 'reference',
+      to:[{type: 'billboard'}]
+     }
   ],
 }
 
