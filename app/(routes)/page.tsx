@@ -3,7 +3,7 @@ import { Billboard } from '@/components/Billboard'
 
 
 export default async function Home() {
-  const billboard = await getBillboard('bb0a0847-883f-48c7-9973-b5b212349e79')
+  const billboard = await getBillboard('94c8b3d2-9a4e-4ab9-81bf-51c9c61962d0')
 
   return <main>
     <Billboard text={billboard.label} imageSrc={billboard.image} />
