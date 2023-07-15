@@ -9,11 +9,11 @@ type BillboardProps = {
 
 const billboard = tv({
   slots: {
-    base: 'container mx-auto bg-blend-darken rounded-xl relative aspect-square md:aspect-[2.4/1] overflow-hidden bg-cover flex items-center justify-center',
+    base: 'container mx-auto bg-blend-darken rounded-xl relative aspect-16/9 md:aspect-[2.4/1] overflow-hidden bg-cover flex items-center justify-center',
     label:
-      'text-white text-7xl absolute font-semibold drop-shadow-lg shadow-black w-9/12 text-center ',
+      'text-white text-3xl lg:text-7xl md:text-5xl absolute font-bold drop-shadow-lg shadow-black w-9/12 text-center ',
     overlay: 'bg-black bg-opacity-40 absolute w-full h-full',
-    image: 'w-full',
+    image: 'w-full ',
   },
 })
 
