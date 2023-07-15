@@ -9,9 +9,9 @@ import billboard from './sanity/schemas/billboard-schema'
 export const config = defineConfig({
   name: 'default',
   title: 'catalogo',
-  projectId: 'd83sv7cr',
-  dataset: 'production',
-  apiVersion: '2023-07-11',
+  projectId: process.env.NEXT_PUBLIC_SANITY_ID as string,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET as string,
+  apiVersion: process.env.NEXT_PUBLIC_SANITY_API_VERSION as string,
   basePath: '/admin',
 
   plugins: [deskTool(), colorInput()],
