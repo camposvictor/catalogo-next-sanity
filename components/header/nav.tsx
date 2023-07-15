@@ -11,8 +11,8 @@ type NavProps = {
 
 const header = tv({
   slots: {
-    base: 'flex',
-    link: 'px-5 py-1 text-gray-400 font-base font-medium cursor-pointer hover:text-gray-100 transition ease-in-out ',
+    base: 'flex items-center',
+    link: 'px-2 md:px-5 text-sm md:text-basepy-1 text-zinc-400 font-base font-medium cursor-pointer hover:text-zinc-100 transition ease-in-out ',
   },
 })
 
@@ -34,7 +34,7 @@ export function Nav({ categories }: NavProps) {
           key={href}
           href={href}
           data-active={isActive}
-          className={link({ class: 'data-[active=true]:text-gray-100' })}
+          className={link({ class: 'data-[active=true]:text-zinc-100' })}
         >
           {label}
         </Link>
