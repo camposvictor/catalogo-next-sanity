@@ -2,8 +2,6 @@ import { getCategory } from '@/actions/get-category'
 import { getProductsByCategory } from '@/actions/get-products-by-category'
 import { Billboard } from '@/components/billboard'
 import { ProductGrid } from '@/components/product-grid'
-import category from '@/sanity/schemas/category-schema'
-import { Product } from '@/types/product'
 
 type CategoryPageProps = {
   params: {
