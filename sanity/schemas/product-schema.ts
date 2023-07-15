@@ -17,6 +17,11 @@ const product = {
       },
     },
     {
+      name: 'price',
+      title: 'Preço',
+      type: 'number',
+    },
+    {
       name: 'images',
       title: 'Imagens',
       type: 'array',
@@ -40,16 +45,16 @@ const product = {
       of: [{ type: 'string' }],
       options: {
         list: [
-          { title: 'P', value: 's' },
-          { title: 'M', value: 'm' },
-          { title: 'G', value: 'l' },
+          { title: 'P', value: 'P' },
+          { title: 'M', value: 'M' },
+          { title: 'G', value: 'G' },
         ],
         layout: 'grid',
       },
       hidden: ({ document }) => document?.unique,
     },
     {
-      name: 'color',
+      name: 'colors',
       title: 'Cores',
       type: 'array',
       of: [
