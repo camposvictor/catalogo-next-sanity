@@ -15,7 +15,5 @@ export async function getProduct(id: string) {
     { id },
   )
 
-  console.log(product)
-
   return product[0]
 }
